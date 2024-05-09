@@ -6,6 +6,30 @@
     <title>Test</title>
 </head>
 <body>
-    <h1>test</h1>
+    <h1 class="tester">test</h1>
+<br>
+
+<button id="next">next</button>
+<br>
+<h2 class="labels">test area</h2>
+
+<br>
+<h2 class="labels">test area</h2>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"> </script>	</body>
+    <script>
+        var dataNumber=0
+        var data = ["test1", "test2"]
+        $("#next").click(function(){
+            $(".labels").text(data[dataNumber]);
+            dataNumber+=1
+        });		
+        
+
+    </script>
+
 </body>
 </html>
